@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "lib": ["es2015", "es2016", "es2017", "es2018", "esnext"],
+        "strict": false,
+        "outDir": "./out"
+    },
+    "tstl": {
+      "luaTarget": "5.3",
+      "luaLibImport":"inline"
+    }
+}
