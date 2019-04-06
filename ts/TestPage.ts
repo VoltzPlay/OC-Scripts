@@ -6,5 +6,10 @@ class testpage extends Page
         print(this.gpu.height.toString());
         print(this.gpu.width.toString());
     }
+    constructor(gpu:Gpu)
+    {
+        super(gpu);
+        gpu.bind(component.screen.address);
+    }
 
 }

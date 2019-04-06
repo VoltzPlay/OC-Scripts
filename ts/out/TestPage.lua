@@ -13,6 +13,10 @@ testpage.new = function(...)
     self:____constructor(...);
     return self;
 end;
+testpage.prototype.____constructor = function(self, gpu)
+    Page.prototype.____constructor(self, gpu);
+    gpu:bind(component.screen.address);
+end;
 testpage.prototype.draw = function(self)
     print(tostring(self.gpu.height));
     print(tostring(self.gpu.width));
