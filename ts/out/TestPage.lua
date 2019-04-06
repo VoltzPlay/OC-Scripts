@@ -14,5 +14,6 @@ testpage.new = function(...)
     return self;
 end;
 testpage.prototype.draw = function(self)
-    print("test\ntest2");
+    print(tostring(self.gpu.height));
+    print(tostring(self.gpu.width));
 end;

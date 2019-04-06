@@ -3,7 +3,8 @@ class testpage extends Page
 {
     draw(): void 
     {
-        print("test\ntest2");
+        print(this.gpu.height.toString());
+        print(this.gpu.width.toString());
     }
 
 }

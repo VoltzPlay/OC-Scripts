@@ -33,6 +33,7 @@ class Gpu
     {
         this._proxy["setBackground"](colour);
     }
+    
     get height() : number
     {
         let reses:number[] = [this._proxy["getResolution"]()];
