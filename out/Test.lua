@@ -1,6 +1,6 @@
 --[[ Generated with https://github.com/TypeScriptToLua/TypeScriptToLua ]]
 component = require("component");
-require("Testpage");
+require("TestPage");
 main = function(self)
     local page = testpage.new(Gpu.new(nil));
     page:draw();
