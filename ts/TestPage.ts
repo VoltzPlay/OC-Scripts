@@ -3,13 +3,13 @@ class testpage extends Page
 {
     draw(): void 
     {
-        print(this.gpu.height.toString());
-        print(this.gpu.width.toString());
+        print(this.gpu.getResolution()[0].toString());
+        print(this.gpu.getResolution()[1].toString());
     }
     constructor(gpu:Gpu)
     {
         super(gpu);
-        gpu.bind(component.screen.address);
+        gpu.bind("test");
     }
 
 }

@@ -5,6 +5,6 @@ abstract class Navigator
     pages:Array<Page>;
     start():void
     {
-        this.gpu.fill(0,0,this.gpu.height,this.gpu.height," ")
+        this.gpu.fill(0,0,this.gpu.getResolution()[0],this.gpu.getResolution()[1]," ")
     }
 }

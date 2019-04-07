@@ -15,9 +15,9 @@ testpage.new = function(...)
 end;
 testpage.prototype.____constructor = function(self, gpu)
     Page.prototype.____constructor(self, gpu);
-    gpu:bind(component.screen.address);
+    gpu.bind("test");
 end;
 testpage.prototype.draw = function(self)
-    print(tostring(self.gpu.height));
-    print(tostring(self.gpu.width));
+    print(tostring(({self.gpu.getResolution()})[0 + 1]));
+    print(tostring(({self.gpu.getResolution()})[1 + 1]));
 end;

@@ -13,5 +13,5 @@ end;
 Navigator.prototype.____constructor = function(self)
 end;
 Navigator.prototype.start = function(self)
-    self.gpu:fill(0, 0, self.gpu.height, self.gpu.height, " ");
+    self.gpu.fill(0, 0, ({self.gpu.getResolution()})[0 + 1], ({self.gpu.getResolution()})[1 + 1], " ");
 end;

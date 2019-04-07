@@ -26,7 +26,6 @@ Page.prototype.print = function(self, text)
                     self.cursorX = temp;
                     self.cursorY = self.cursorY + 1;
                 else
-                    self.gpu:fill(self.cursorX, self.cursorY, 1, 1, c);
                     self.cursorX = self.cursorX + 1;
                 end
             end
