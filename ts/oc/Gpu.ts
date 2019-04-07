@@ -1,5 +1,5 @@
 /** @noSelf */
-declare abstract class Gpu extends CoProxy
+declare abstract class Gpu //extends CoProxy
 {
     bind(screenAdr:string):void
     

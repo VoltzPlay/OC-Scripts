@@ -20,4 +20,6 @@ end;
 testpage.prototype.draw = function(self)
     print(tostring(({self.gpu.getResolution()})[0 + 1]));
     print(tostring(({self.gpu.getResolution()})[1 + 1]));
+    local testinterface = component.proxy("2c429854-f63e-4c2c-94c1-f20caa9f6433");
+    testinterface:extractItem(Item.cobble, 64, north);
 end;
