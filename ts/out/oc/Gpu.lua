@@ -43,46 +43,39 @@ Gpu.prototype.____constructor = function(self, address)
     end
 end;
 Gpu.prototype.____getters.height = function(self)
-    local reses = {(function()
-        local ____TS_self = self._proxy;
-        return ____TS_self.getResolution(____TS_self);
-    end)()};
+    local F;
+    F = self._proxy.getResolution;
+    local reses = {F()};
     return reses[1 + 1];
 end;
 Gpu.prototype.____getters.width = function(self)
-    local reses = {(function()
-        local ____TS_self = self._proxy;
-        return ____TS_self.getResolution(____TS_self);
-    end)()};
+    local F;
+    F = self._proxy.getResolution;
+    local reses = {F()};
     return reses[0 + 1];
 end;
 Gpu.prototype.bind = function(self, screenAdr)
-    (function()
-        local ____TS_self = self._proxy;
-        return ____TS_self.bind(____TS_self, screenAdr);
-    end)();
+    local bindF;
+    bindF = self._proxy.bind;
+    bindF(screenAdr);
 end;
 Gpu.prototype.setResolution = function(self, width, height)
-    (function()
-        local ____TS_self = self._proxy;
-        return ____TS_self.setResolution(____TS_self, width, height);
-    end)();
+    local setResolutionF;
+    setResolutionF = self._proxy.setResolution;
+    setResolutionF(width, height);
 end;
 Gpu.prototype.fill = function(self, x, y, width, height, char)
-    (function()
-        local ____TS_self = self._proxy;
-        return ____TS_self.fill(____TS_self, x, y, width, height, char);
-    end)();
+    local fillF;
+    fillF = self._proxy.fill;
+    fillF(x, y, width, height, char);
 end;
 Gpu.prototype.setForeground = function(self, colour)
-    (function()
-        local ____TS_self = self._proxy;
-        return ____TS_self.setForeground(____TS_self, colour);
-    end)();
+    local setForegroundF;
+    setForegroundF = self._proxy.setForeground;
+    setForegroundF(colour);
 end;
 Gpu.prototype.setBackground = function(self, colour)
-    (function()
-        local ____TS_self = self._proxy;
-        return ____TS_self.setBackground(____TS_self, colour);
-    end)();
+    local setBackgroundF;
+    setBackgroundF = self._proxy.setBackground;
+    setBackgroundF(colour);
 end;
