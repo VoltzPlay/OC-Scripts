@@ -25,7 +25,7 @@ end;
 testpage.prototype.draw = function(self)
     print(tostring(({self.gpu.getResolution()})[0 + 1]));
     print(tostring(({self.gpu.getResolution()})[1 + 1]));
-    print(side.Top);
+    print(side.top);
 end;
 testpage.prototype.printItem = function(self, item)
     for i in pairs(item) do
