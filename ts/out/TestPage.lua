@@ -25,7 +25,7 @@ end;
 testpage.prototype.draw = function(self)
     print(tostring(({self.gpu.getResolution()})[0 + 1]));
     print(tostring(({self.gpu.getResolution()})[1 + 1]));
-    self.config.nodes[0 + 1].interfaces[0 + 1].rsInterface.extractItem(Item.cobble, 64, side.Top);
+    print(side.Top);
 end;
 testpage.prototype.printItem = function(self, item)
     for i in pairs(item) do
