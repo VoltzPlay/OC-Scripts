@@ -10,7 +10,7 @@ class testpage extends Page
     {
         print(this.gpu.getResolution()[0].toString());
         print(this.gpu.getResolution()[1].toString());
-        print(side.Top);
+        print(side.top);
         //this.config.nodes[0].interfaces[0].rsInterface.extractItem(Item.cobble,64,side.Top);
     }
     constructor(gpu:Gpu)

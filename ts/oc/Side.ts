@@ -1,10 +1,10 @@
 /** @noSelf */
 declare abstract class Side
 {
-    Bottom:number;
-    Top:number;
-    Back:number;
-    Front:number;
-    Right:number;
-    Left:number;
+    bottom:number;
+    top:number;
+    back:number;
+    front:number;
+    right:number;
+    left:number;
 }
