@@ -3,7 +3,7 @@ require("Page");
 require("oc/Item");
 require("Config");
 require("ItemMgmt/Node");
-local side = require("sides");
+side = require("sides");
 testpage = testpage or {};
 testpage.__index = testpage;
 testpage.prototype = testpage.prototype or {};
