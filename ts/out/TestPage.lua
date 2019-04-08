@@ -1,6 +1,8 @@
 --[[ Generated with https://github.com/TypeScriptToLua/TypeScriptToLua ]]
 require("Page");
 require("oc/Item");
+require("Config");
+local side = require("sides");
 testpage = testpage or {};
 testpage.__index = testpage;
 testpage.prototype = testpage.prototype or {};
@@ -15,14 +17,14 @@ testpage.new = function(...)
     return self;
 end;
 testpage.prototype.____constructor = function(self, gpu)
+    self.config = Config.new();
     Page.prototype.____constructor(self, gpu);
     gpu.bind("test");
 end;
 testpage.prototype.draw = function(self)
     print(tostring(({self.gpu.getResolution()})[0 + 1]));
     print(tostring(({self.gpu.getResolution()})[1 + 1]));
-    local testinterface = component.proxy("d38c8ab8-defd-4089-8801-41df7308980f");
-    testinterface.extractItem(Item.cobble, 64, west);
+    self.config.nodes[0 + 1].interfaces[0 + 1].rsInterface.extractItem(Item.cobble, 64, side.Top);
 end;
 testpage.prototype.printItem = function(self, item)
     for i in pairs(item) do

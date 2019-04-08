@@ -7,5 +7,12 @@ class Item
         this.damage = damage;
         this.name = name;
     }
-    static cobble = new Item("minecraft:cobblestone",null);
+    //static cobble 
+    public static get cobble() : Item {
+        return new Item("minecraft:cobblestone",null);
+    }
+}
+class ItemStack extends Item
+{
+    size : number
 }

@@ -1,4 +1,10 @@
-const north:number = 2
-const west:number = 4
-
-
+/** @noSelf */
+declare abstract class Side
+{
+    Bottom:number;
+    Top:number;
+    Back:number;
+    Front:number;
+    Right:number;
+    Left:number;
+}

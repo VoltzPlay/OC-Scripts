@@ -1,14 +1,15 @@
 require("Page")
 require("oc/Item")
+require("Config")
+let side : Side = require("sides")
 class testpage extends Page
 {
+    config:Config = new Config();
     draw(): void
     {
         print(this.gpu.getResolution()[0].toString());
         print(this.gpu.getResolution()[1].toString());
-        var testinterface:RsInterface = component.proxy("d38c8ab8-defd-4089-8801-41df7308980f") as RsInterface
-        testinterface.extractItem(Item.cobble,64, west);
-        //this.printItem(Item.cobble);
+        this.config.nodes[0].interfaces[0].rsInterface.extractItem(Item.cobble,64,side.Top);
     }
     constructor(gpu:Gpu)
     {

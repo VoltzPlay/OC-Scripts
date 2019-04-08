@@ -1,0 +1,4 @@
+class ItemLedgerEntry extends ItemStack
+{
+    
+}
