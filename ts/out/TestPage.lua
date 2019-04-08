@@ -2,7 +2,7 @@
 require("Page");
 require("oc/Item");
 require("Config");
-require("Item/Node");
+require("ItemMgmt/Node");
 local side = require("sides");
 testpage = testpage or {};
 testpage.__index = testpage;
