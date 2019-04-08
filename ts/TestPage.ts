@@ -1,6 +1,7 @@
 require("Page")
 require("oc/Item")
 require("Config")
+require("Item/Node")
 let side : Side = require("sides")
 class testpage extends Page
 {

@@ -1,3 +1,4 @@
+require("NodeInterface")
 class Node
 {
     id:number;
