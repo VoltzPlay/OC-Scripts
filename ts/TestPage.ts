@@ -2,7 +2,7 @@ require("Page")
 require("oc/Item")
 require("Config")
 require("ItemMgmt/Node")
-let side : Side = require("sides")
+var side : Side = require("sides")
 class testpage extends Page
 {
     config:Config = new Config();
