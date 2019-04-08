@@ -10,7 +10,6 @@ Item.new = function(...)
     return self;
 end;
 Item.prototype.____constructor = function(self, name, damage)
-    self.name = "minecraft:cobblestone";
     self.damage = damage;
     self.name = name;
 end;

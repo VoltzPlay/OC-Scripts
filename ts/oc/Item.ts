@@ -1,6 +1,6 @@
 class Item 
 {  
-    name:string = "minecraft:cobblestone";
+    name:string;
     damage:number;
     constructor(name:string, damage:number)
     {
