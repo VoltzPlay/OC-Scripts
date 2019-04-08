@@ -21,5 +21,13 @@ end;
 testpage.prototype.draw = function(self)
     print(tostring(({self.gpu.getResolution()})[0 + 1]));
     print(tostring(({self.gpu.getResolution()})[1 + 1]));
-    Item.cobble;
+    self:printItem(Item.cobble);
+end;
+testpage.prototype.printItem = function(self, item)
+    for i in pairs(item) do
+        do
+            print((i .. ":") .. item[i]);
+        end
+        ::__continue4::
+    end
 end;

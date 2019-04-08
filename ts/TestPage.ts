@@ -8,11 +8,19 @@ class testpage extends Page
         print(this.gpu.getResolution()[1].toString());
         //var testinterface:RsInterface = component.proxy("d38c8ab8-defd-4089-8801-41df7308980f") as RsInterface
         //testinterface.extractItem(Item.cobble,64, north);
-        Item.cobble
+        this.printItem(Item.cobble);
     }
     constructor(gpu:Gpu)
     {
         super(gpu);
         gpu.bind("test");
+    }
+    printItem(item:Item)
+    {
+        for (let i in item) 
+        {
+            print(i + ":" + item[i]);
+        }
+         
     }
 }
