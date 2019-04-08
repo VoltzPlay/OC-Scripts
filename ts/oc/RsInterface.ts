@@ -1,3 +1,4 @@
+/** @noSelf */
 declare abstract class RsInterface extends CoProxy
 {
     getItems():Item[];
