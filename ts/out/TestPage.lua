@@ -21,5 +21,5 @@ end;
 testpage.prototype.draw = function(self)
     print(tostring(({self.gpu.getResolution()})[0 + 1]));
     print(tostring(({self.gpu.getResolution()})[1 + 1]));
-    print(Item.cobble);
+    Item.cobble;
 end;
