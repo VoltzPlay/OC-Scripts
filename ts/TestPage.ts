@@ -1,5 +1,5 @@
 require("Page")
-require("oc/item")
+require("oc/Item")
 class testpage extends Page
 {
     draw(): void

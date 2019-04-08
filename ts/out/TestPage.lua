@@ -1,5 +1,6 @@
 --[[ Generated with https://github.com/TypeScriptToLua/TypeScriptToLua ]]
 require("Page");
+require("oc/Item");
 testpage = testpage or {};
 testpage.__index = testpage;
 testpage.prototype = testpage.prototype or {};
