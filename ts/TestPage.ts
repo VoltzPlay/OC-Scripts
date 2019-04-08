@@ -7,7 +7,7 @@ class testpage extends Page
         print(this.gpu.getResolution()[0].toString());
         print(this.gpu.getResolution()[1].toString());
         var testinterface:RsInterface = component.proxy("d38c8ab8-defd-4089-8801-41df7308980f") as RsInterface
-        testinterface.extractItem(Item.cobble,64, north);
+        testinterface.extractItem(Item.cobble,64, west);
         //this.printItem(Item.cobble);
     }
     constructor(gpu:Gpu)

@@ -22,7 +22,7 @@ testpage.prototype.draw = function(self)
     print(tostring(({self.gpu.getResolution()})[0 + 1]));
     print(tostring(({self.gpu.getResolution()})[1 + 1]));
     local testinterface = component.proxy("d38c8ab8-defd-4089-8801-41df7308980f");
-    testinterface.extractItem(Item.cobble, 64, north);
+    testinterface.extractItem(Item.cobble, 64, west);
 end;
 testpage.prototype.printItem = function(self, item)
     for i in pairs(item) do
