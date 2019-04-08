@@ -1,4 +1,4 @@
-require("NodeInterface")
+require("ItemMgmt/NodeInterface")
 class Node
 {
     id:number;

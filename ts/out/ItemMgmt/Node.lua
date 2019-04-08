@@ -1,5 +1,5 @@
 --[[ Generated with https://github.com/TypeScriptToLua/TypeScriptToLua ]]
-require("NodeInterface");
+require("ItemMgmt/NodeInterface");
 Node = Node or {};
 Node.__index = Node;
 Node.prototype = Node.prototype or {};
