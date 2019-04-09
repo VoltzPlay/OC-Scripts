@@ -25,6 +25,7 @@ Node.prototype.countItems = function(self, item)
         return;
     end
     local ItemStack = item;
+    print(self.interfaces);
     if self.interfaces[0 + 1] == nil then
         ItemStack.size = 0;
         return;
