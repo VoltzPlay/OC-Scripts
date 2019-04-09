@@ -31,5 +31,8 @@ Node.prototype.countItems = function(self, item)
         ItemStack.size = 0;
         return;
     end
+    print(self.interfaces[0 + 1].rsInterface);
+    print(self.interfaces[0 + 1].rsInterface.getItem);
+    print(self.interfaces[0 + 1].rsInterface.getItem(item).size);
     ItemStack.size = self.interfaces[0 + 1].rsInterface.getItem(item).size;
 end;

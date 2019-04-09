@@ -30,7 +30,9 @@ class Node
             ItemStack.size = 0;
             return;
         }
-        
+        print(this.interfaces[0].rsInterface);
+        print(this.interfaces[0].rsInterface.getItem);
+        print(this.interfaces[0].rsInterface.getItem(item).size);
         ItemStack.size = this.interfaces[0].rsInterface.getItem(item).size;
     }
 }
