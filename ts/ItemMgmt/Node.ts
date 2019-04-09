@@ -24,6 +24,7 @@ class Node
         }
         let ItemStack = item as ItemStack;
         print(this.interfaces);
+        print(this.interfaces.length);
         if(this.interfaces[0] == null)
         {
             ItemStack.size = 0;
