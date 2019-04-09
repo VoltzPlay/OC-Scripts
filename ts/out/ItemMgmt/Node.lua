@@ -19,6 +19,7 @@ Node.prototype.countItems = function(self, item)
     local ItemStack = item;
     if self.interfaces[0 + 1] == nil then
         ItemStack.size = 0;
+        return;
     end
     ItemStack.size = self.interfaces[0 + 1].rsInterface.getItem(item).size;
 end;

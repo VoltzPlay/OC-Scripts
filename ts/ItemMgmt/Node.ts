@@ -16,6 +16,7 @@ class Node
         if(this.interfaces[0] == null)
         {
             ItemStack.size = 0;
+            return;
         }
         
         ItemStack.size = this.interfaces[0].rsInterface.getItem(item).size;
