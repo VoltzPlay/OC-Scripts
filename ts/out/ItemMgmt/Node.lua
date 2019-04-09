@@ -10,5 +10,15 @@ Node.new = function(...)
     self:____constructor(...);
     return self;
 end;
-Node.prototype.____constructor = function(self)
+Node.prototype.____constructor = function(self, id, name, interfaces)
+    self.id = id;
+    self.interfaces = interfaces;
+    self.name = name;
+end;
+Node.prototype.countItems = function(self, item)
+    local ItemStack = item;
+    if self.interfaces[0 + 1] == nil then
+        ItemStack.size = 0;
+    end
+    ItemStack.size = self.interfaces[0 + 1].rsInterface.getItem(item).size;
 end;

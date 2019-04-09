@@ -10,19 +10,12 @@ class testpage extends Page
     {
         print(this.gpu.getResolution()[0].toString());
         print(this.gpu.getResolution()[1].toString());
-        this.config.nodes[0].interfaces[0].rsInterface.extractItem(Item.cobble,64,side.top);
+        //this.config.nodes[0].interfaces[0].rsInterface.extractItem(Item.cobble,64,side.top);
+        print(this.config.nodes[0].countItems(Item.cobble));
     }
     constructor(gpu:Gpu)
     {
         super(gpu);
-        gpu.bind("test");
-    }
-    printItem(item:Item)
-    {
-        for (let i in item) 
-        {
-            print(i + ":" + item[i]);
-        }
-         
+        //gpu.bind("test");
     }
 }

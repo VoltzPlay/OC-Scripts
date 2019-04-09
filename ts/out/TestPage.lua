@@ -20,18 +20,9 @@ end;
 testpage.prototype.____constructor = function(self, gpu)
     self.config = Config.new();
     Page.prototype.____constructor(self, gpu);
-    gpu.bind("test");
 end;
 testpage.prototype.draw = function(self)
     print(tostring(({self.gpu.getResolution()})[0 + 1]));
     print(tostring(({self.gpu.getResolution()})[1 + 1]));
-    self.config.nodes[0 + 1].interfaces[0 + 1].rsInterface.extractItem(Item.cobble, 64, side.top);
-end;
-testpage.prototype.printItem = function(self, item)
-    for i in pairs(item) do
-        do
-            print((i .. ":") .. item[i]);
-        end
-        ::__continue4::
-    end
+    print(self.config.nodes[0 + 1]:countItems(Item.cobble));
 end;
