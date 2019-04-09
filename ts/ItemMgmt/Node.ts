@@ -12,6 +12,11 @@ class Node
     }
     countItems(item:Item) : void
     {
+        if(this.interfaces == null)
+        {
+            print("Interfaces null");
+            return;
+        }
         let ItemStack = item as ItemStack;
         if(this.interfaces[0] == null)
         {
