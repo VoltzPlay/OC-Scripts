@@ -12,6 +12,11 @@ class Node
     }
     countItems(item:Item) : void
     {
+        if(item == null)
+        {
+            print("Item null");
+            return;
+        }
         if(this.interfaces == null)
         {
             print("Interfaces null");

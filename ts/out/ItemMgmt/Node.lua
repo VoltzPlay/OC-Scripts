@@ -16,6 +16,10 @@ Node.prototype.____constructor = function(self, id, name, interfaces)
     self.name = name;
 end;
 Node.prototype.countItems = function(self, item)
+    if item == nil then
+        print("Item null");
+        return;
+    end
     if self.interfaces == nil then
         print("Interfaces null");
         return;
