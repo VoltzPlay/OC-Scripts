@@ -1,0 +1,1 @@
+var internet : Internet = require("internet")  

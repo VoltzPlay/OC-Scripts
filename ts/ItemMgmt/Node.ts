@@ -1,12 +1,13 @@
 require("ItemMgmt/NodeInterface")
+require("ItemMgmt/ItemLedgerEntry")
 class Node
 {
-    id:number;
+    //id:number;
     name:string;
     interfaces:NodeInterface[];
     constructor(id:number,name:string,interfaces:NodeInterface[])
     {
-        this.id = id;
+        //this.id = id;
         this.interfaces = interfaces;
         this.name = name;
     }
